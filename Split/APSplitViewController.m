@@ -174,12 +174,12 @@ static float koefficient = 0.0f; // Need to fix a bug with 20px near the statusb
 	[_detail viewDidAppear:animated];
     
     // it's Needed to fix a bug with 20px near the statusbar
-    if (self.interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown)
+    if (self.interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown || UIInterfaceOrientationIsLandscape(self.interfaceOrientation))
         koefficient = 20.0f;
     else
         koefficient = 0.0f;
     
-//	[self layoutSubviews];
+	[self layoutSubviews];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
