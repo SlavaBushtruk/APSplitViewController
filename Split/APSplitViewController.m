@@ -65,13 +65,6 @@ static float koefficient = 0.0f; // Need to fix a bug with 20px near the statusb
 	_divider.frame = CGRectMake(constMasterWidth, 0, constDividerWidth, size.height);
 }
 
-- (void) dealloc {
-
-    [_master release];
-    [_detail release];
-    [super dealloc];
-}
-
 #pragma mark - View lifecycle
 
 - (void) pushToMasterController:(UIViewController *)controller {
@@ -132,7 +125,6 @@ static float koefficient = 0.0f; // Need to fix a bug with 20px near the statusb
     UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
     imageView.frame = CGRectMake(-4, 0, image.size.width, image.size.height);
     [_divider addSubview:imageView];
-    [imageView release];
 }
 
 - (void) viewDidLoad {
@@ -150,12 +142,6 @@ static float koefficient = 0.0f; // Need to fix a bug with 20px near the statusb
 //	NSLog(@"   self.view.frame: %@", NSStringFromCGRect(self.view.frame));
 //	NSLog(@"_master.view.frame: %@", NSStringFromCGRect(_master.view.frame));
 //	NSLog(@"_detail.view.frame: %@", NSStringFromCGRect(_detail.view.frame));
-}
-
-- (void) viewDidUnload {
-
-    [_master release], _master = nil;
-    [_detail release], _detail = nil;
 }
 
 #pragma mark -

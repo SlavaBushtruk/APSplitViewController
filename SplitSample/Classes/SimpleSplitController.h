@@ -12,7 +12,7 @@
 @interface SimpleSplitController : APSplitViewController {
 }
 
-@property (nonatomic, retain) UIViewController *left;
-@property (nonatomic, retain) UIViewController *right;
+@property (nonatomic, strong) UIViewController *left;
+@property (nonatomic, strong) UIViewController *right;
 
 @end

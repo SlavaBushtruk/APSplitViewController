@@ -21,11 +21,6 @@
     return self;
 }
 
-- (void)dealloc {
-    _splitDelegate = nil;
-    [super dealloc];
-}
-
 #pragma mark - Overwrite methods
 
 - (UIViewController *)popViewControllerAnimated:(BOOL)animated {
