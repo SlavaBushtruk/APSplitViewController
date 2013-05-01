@@ -20,12 +20,6 @@
 
 @synthesize left, right;
 
-- (void)dealloc {
-    self.left = nil;
-    self.right = nil;
-
-    [super dealloc];
-}
 
 #pragma mark - View lifecycle
 
@@ -61,22 +55,22 @@
 - (UIViewController*) randomViewController1 {
     UIViewController *viewController = [[UIViewController alloc] init];
     viewController.view.backgroundColor = [self randomColor];    
-    viewController.navigationItem.rightBarButtonItem = [[[UIBarButtonItem alloc] initWithTitle:@"Push"
+    viewController.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Push"
                                                                                          style:UIBarButtonItemStyleBordered 
                                                                                         target:self 
-                                                                                        action:@selector(buttonPushRandomViewController1)] autorelease];   
+                                                                                        action:@selector(buttonPushRandomViewController1)];   
     
-    return [viewController autorelease];
+    return viewController;
 }
 
 - (UIViewController*) randomViewController2 {
     UIViewController *viewController = [[UIViewController alloc] init];
     viewController.view.backgroundColor = [self randomColor];
-    viewController.navigationItem.rightBarButtonItem = [[[UIBarButtonItem alloc] initWithTitle:@"Push"
+    viewController.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Push"
                                                                                          style:UIBarButtonItemStyleBordered 
                                                                                         target:self 
-                                                                                        action:@selector(buttonPushRandomViewController2)] autorelease];
-    return [viewController autorelease];
+                                                                                        action:@selector(buttonPushRandomViewController2)];
+    return viewController;
 }
 
 - (void) buttonPushRandomViewController1 {

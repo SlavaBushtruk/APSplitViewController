@@ -13,7 +13,7 @@
 @interface APNavigationControllerForSplitController : UINavigationController {
 }
 
-@property (nonatomic, readonly) id<APSplitViewDelegate> splitDelegate;
+@property (unsafe_unretained, nonatomic, readonly) id<APSplitViewDelegate> splitDelegate;
 
 - (id)initWithSplit:(id<APSplitViewDelegate>)splitDelegate;
 

@@ -12,10 +12,6 @@
 
 @synthesize masterViewController = _masterViewController;
 
-- (void)dealloc {
-    [_masterViewController release];
-    [super dealloc];
-}
 
 #pragma mark - View lifecycle
 
@@ -30,7 +26,6 @@
 - (void)viewDidUnload {
     [super viewDidUnload];
     
-    [_masterViewController release];
     _masterViewController = nil;
 }
 

@@ -24,10 +24,10 @@
     self = [super initWithStyle:UITableViewStylePlain];
     if (self) {
         
-        _split = [split retain];
+        _split = split;
         
         // init detail
-        _detailViewController = [[self randomViewController] retain];
+        _detailViewController = [self randomViewController];
         _detailViewController.title = @"Detail root";
         [_split pushToDetailController:self.detailViewController];
         
@@ -37,13 +37,6 @@
     return self;
 }
 
-- (void)dealloc
-{
-    [_split release];
-    [_detailViewController release];
-    [_colorList release];
-    [super dealloc];
-}
 
 - (void)didReceiveMemoryWarning
 {
@@ -59,10 +52,10 @@
 {
     [super viewDidLoad];
     
-    self.navigationItem.rightBarButtonItem = [[[UIBarButtonItem alloc] initWithTitle:@"Push"
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Push"
                                                                                style:UIBarButtonItemStyleBordered 
                                                                               target:self 
-                                                                              action:@selector(buttonPushRandomViewController)] autorelease];
+                                                                              action:@selector(buttonPushRandomViewController)];
 }
 
 - (void)viewDidUnload
@@ -71,7 +64,6 @@
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
     
-    [_detailViewController release];
     _detailViewController = nil;
 }
 
@@ -119,7 +111,7 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
         cell.selectionStyle = UITableViewCellSelectionStyleGray;
     }
 
@@ -178,7 +170,7 @@
 - (UIViewController*)randomViewController {
     UIViewController *viewController = [[UIViewController alloc] init];
     viewController.view.backgroundColor = [self randomColor];
-    return [viewController autorelease];
+    return viewController;
 }
 
 - (void) buttonPushRandomViewController {

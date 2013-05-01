@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F9098276136DA60000C99CF5 /* SimpleSplitController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9098270136DA60000C99CF5 /* SimpleSplitController.m */; };
-		F9098289136DA63000C99CF5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F9098287136DA63000C99CF5 /* InfoPlist.strings */; };
 		F909828C136DA64400C99CF5 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = F909828A136DA64400C99CF5 /* MainWindow.xib */; };
 		F90C9083137335070094FB26 /* APNavigationControllerForSplitController.m in Sources */ = {isa = PBXBuildFile; fileRef = F90C9082137335070094FB26 /* APNavigationControllerForSplitController.m */; };
 		F93A8175136EB11200BAA65A /* Icon72.png in Resources */ = {isa = PBXBuildFile; fileRef = F93A8174136EB11200BAA65A /* Icon72.png */; };
@@ -20,14 +19,13 @@
 		F9C811BD136D956D00505A8E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9C811BC136D956D00505A8E /* CoreGraphics.framework */; };
 		F9C811C6136D956E00505A8E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F9C811C5136D956E00505A8E /* main.m */; };
 		F9C811C9136D956E00505A8E /* SplitSampleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F9C811C8136D956E00505A8E /* SplitSampleAppDelegate.m */; };
-		F9E72E5E136DA99900CD71CC /* APSplitSample-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F9E72E5D136DA99900CD71CC /* APSplitSample-Info.plist */; };
 		F9FDD3E6136DD23200FA3428 /* APSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FDD3E1136DD23200FA3428 /* APSplitViewController.m */; };
 		F9FDD3E7136DD23200FA3428 /* APTabBarControllerForSplitController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FDD3E3136DD23200FA3428 /* APTabBarControllerForSplitController.m */; };
 		F9FDD3E8136DD23200FA3428 /* split-divider.png in Resources */ = {isa = PBXBuildFile; fileRef = F9FDD3E5136DD23200FA3428 /* split-divider.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F909826F136DA60000C99CF5 /* SimpleSplitController.h */ = {isa = PBXFileReference; fileEncoding = 4; path = SimpleSplitController.h; sourceTree = "<group>"; };
+		F909826F136DA60000C99CF5 /* SimpleSplitController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleSplitController.h; sourceTree = "<group>"; };
 		F9098270136DA60000C99CF5 /* SimpleSplitController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleSplitController.m; sourceTree = "<group>"; };
 		F9098288136DA63000C99CF5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F909828B136DA64400C99CF5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
@@ -37,7 +35,7 @@
 		F93A8176136EB85500BAA65A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		F965505413727B04001F7E4B /* ColorListMasterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorListMasterController.h; sourceTree = "<group>"; };
 		F965505513727B04001F7E4B /* ColorListMasterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorListMasterController.m; sourceTree = "<group>"; };
-		F965505913728D3C001F7E4B /* MasterDetailSplitController.h */ = {isa = PBXFileReference; fileEncoding = 4; path = MasterDetailSplitController.h; sourceTree = "<group>"; };
+		F965505913728D3C001F7E4B /* MasterDetailSplitController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterDetailSplitController.h; sourceTree = "<group>"; };
 		F965505A13728D3C001F7E4B /* MasterDetailSplitController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterDetailSplitController.m; sourceTree = "<group>"; };
 		F9C811B4136D956D00505A8E /* APSplitSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APSplitSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9C811B8136D956D00505A8E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -72,7 +70,7 @@
 		F909826C136DA60000C99CF5 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				F965505C1372927E001F7E4B /* Simple Split */,
+				F965505C1372927E001F7E4B /* Two Sides Split */,
 				F965505D13729295001F7E4B /* Master–Detail Split */,
 			);
 			path = Classes;
@@ -220,9 +218,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9098289136DA63000C99CF5 /* InfoPlist.strings in Resources */,
 				F909828C136DA64400C99CF5 /* MainWindow.xib in Resources */,
-				F9E72E5E136DA99900CD71CC /* APSplitSample-Info.plist in Resources */,
 				F9FDD3E8136DD23200FA3428 /* split-divider.png in Resources */,
 				F93A8175136EB11200BAA65A /* Icon72.png in Resources */,
 				F93A8177136EB85500BAA65A /* README.md in Resources */,
@@ -307,10 +303,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SplitSample/APSplitSample-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "SplitSample/APSplitSample-Info.plist";
 				PRODUCT_NAME = APSplitSample;
 				WRAPPER_EXTENSION = app;
@@ -321,9 +319,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SplitSample/APSplitSample-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "SplitSample/APSplitSample-Info.plist";
 				PRODUCT_NAME = APSplitSample;
 				VALIDATE_PRODUCT = YES;
